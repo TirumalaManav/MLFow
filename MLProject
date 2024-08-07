@@ -1,0 +1,11 @@
+name: Air_Pollution_Forecasting
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      experiment_name: {type: str, default: "Air_Pollution_Forecasting"}
+    command: "python lstm_nn.py --experiment-name {experiment_name}"
+    title: "Run the LSTM Neural Network model to forecast air pollution"
+    
